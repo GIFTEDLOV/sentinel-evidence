@@ -1,7 +1,7 @@
 {
   "schema": "sentinel-advisory-v1",
   "protocol_id": "sentinel-demo",
-  "protocol_address": "0xc4C76868AA96b58C71Ef85Da3e53E96BC538984B",
+  "protocol_address": "0x7F3F78291C3bE65d924C3e18bc65F7500E93c590",
   "network": "Studio Next",
   "canonical_rpc": "https://studio-next.genlayer.com/api",
   "incident_id": "<INCIDENT_ID>",
