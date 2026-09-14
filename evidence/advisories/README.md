@@ -4,16 +4,19 @@ This directory is the authoritative demo advisory channel for the final
 `sentinel-demo` protocol. It is intended to be published at:
 
 ```text
-https://raw.githubusercontent.com/<GITHUB_OWNER>/<GITHUB_REPOSITORY>/master/evidence/advisories/
+https://raw.githubusercontent.com/GIFTEDLOV/sentinel-evidence/main/evidence/advisories/
 ```
 
-The repository owner and repository name are intentionally unresolved until a
-real GitHub remote is configured. Do not register the literal angle-bracket
-placeholders or publish these templates as live evidence.
+The final deployment uses the public `GIFTEDLOV/sentinel-evidence` repository
+on `main`. Templates remain reusable placeholders and are not live evidence.
+
+Final deployment: Network `Studio Next`, RPC
+`https://studio-next.genlayer.com/api`, ProtectedDemo
+`0xc4C76868AA96b58C71Ef85Da3e53E96BC538984B`.
 
 ## Trust boundary
 
-- The canonical Studio-dev RPC independently proves objective transaction
+- The canonical Studio Next RPC independently proves objective transaction
   facts. It is not replaced by this advisory channel.
 - An advisory supplies protocol-owner context: why the referenced, already
   authenticated transaction is classified as an incident or as remediation.
@@ -35,6 +38,8 @@ path:
 
 - `protocol_id` = `sentinel-demo`;
 - `protocol_address` = the final ProtectedDemo address;
+- `network` = `Studio Next`;
+- `canonical_rpc` = `https://studio-next.genlayer.com/api`;
 - `incident_id` = the exact on-chain incident identifier;
 - `phase`, `failure_class`, and the three deterministic semantic flags;
 - `transaction_hash`, which must equal the hash supplied to `bind_evidence`;
@@ -46,10 +51,10 @@ The bound `content_digest` is the digest printed by
 `tools/build_advisory.py`.
 
 `issued_at` is included for judges and the frontend. In the current deployed
-Sentinel, advisory freshness is enforced by the `observed_at` value supplied to
-`bind_evidence` and rechecked at assessment time; `issued_at` is not parsed by
-the contract. Set `observed_at` from the publication/fetch record and never
-invent it.
+Sentinel, advisory freshness is enforced by the internally assigned
+`observed_at` value and rechecked at assessment time; `issued_at` is not parsed
+by the contract. Set the evidence observation time from the publication/fetch
+record and never invent it.
 
 ## Publication procedure
 
@@ -57,7 +62,7 @@ invent it.
    prefix must be the exact normalized serialized entry:
 
    ```text
-   raw.githubusercontent.com|/<OWNER>/<REPOSITORY>/master/evidence/advisories/
+   raw.githubusercontent.com|/GIFTEDLOV/sentinel-evidence/main/evidence/advisories/
    ```
 
 2. Publish the templates and this README in an ordinary repository commit.

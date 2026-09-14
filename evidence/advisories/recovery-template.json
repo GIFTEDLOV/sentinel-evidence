@@ -1,7 +1,9 @@
 {
   "schema": "sentinel-advisory-v1",
   "protocol_id": "sentinel-demo",
-  "protocol_address": "0xFCeC042B2fcc1d793Bf92877665c9Bae16971AE1",
+  "protocol_address": "0xc4C76868AA96b58C71Ef85Da3e53E96BC538984B",
+  "network": "Studio Next",
+  "canonical_rpc": "https://studio-next.genlayer.com/api",
   "incident_id": "<INCIDENT_ID>",
   "phase": "RECOVERY",
   "failure_class": "unauthorized-drain",
