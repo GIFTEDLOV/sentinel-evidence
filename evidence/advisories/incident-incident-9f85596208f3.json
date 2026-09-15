@@ -1,0 +1,31 @@
+{
+  "schema": "sentinel-advisory-v1",
+  "protocol_id": "sentinel-demo",
+  "protocol_address": "0x5Fb5C741d565dC79DaD9b01053aAb09d293bbaE4",
+  "network": "Studio Next",
+  "canonical_rpc": "https://studio-next.genlayer.com/api",
+  "incident_id": "incident-9f85596208f3",
+  "phase": "EMERGENCY",
+  "failure_class": "unauthorized-drain",
+  "status": "ACTIVE",
+  "transaction_hash": "0x9f85596208f3d40ce0a521f82b5ae9f24999a06e3a2da2aa880b6d0a4eb963e7",
+  "issued_at": "2026-09-15T21:38:44.977Z",
+  "current": true,
+  "critical_signal": true,
+  "mitigation_complete": false,
+  "summary": "Authenticated chain evidence establishes a current unauthorized-drain signal for the protected protocol.",
+  "facts": [
+    {
+      "name": "transaction",
+      "value": "0x9f85596208f3d40ce0a521f82b5ae9f24999a06e3a2da2aa880b6d0a4eb963e7"
+    },
+    {
+      "name": "target",
+      "value": "0x5Fb5C741d565dC79DaD9b01053aAb09d293bbaE4"
+    },
+    {
+      "name": "rpc",
+      "value": "https://studio-next.genlayer.com/api"
+    }
+  ]
+}
