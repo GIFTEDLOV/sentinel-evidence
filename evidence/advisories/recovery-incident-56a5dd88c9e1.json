@@ -1,0 +1,27 @@
+{
+  "schema": "sentinel-advisory-v1",
+  "protocol_id": "sentinel-demo",
+  "protocol_address": "0x0FFCcd4b9Bd7e3E3Fe10cb1CC330A8ce36ad78E5",
+  "network": "Studio Next",
+  "canonical_rpc": "https://studio-next.genlayer.com/api",
+  "incident_id": "incident-56a5dd88c9e1",
+  "phase": "RECOVERY",
+  "failure_class": "unauthorized-drain",
+  "status": "REMEDIATED",
+  "transaction_hash": "0x1dca47a8bf805825f48833476f2757ee530dac0896097cd533bb97b2962388cc",
+  "issued_at": "2026-09-16T06:36:53.283Z",
+  "current": false,
+  "critical_signal": false,
+  "mitigation_complete": true,
+  "summary": "Remediation finalized successfully; the protected target remains paused while Sentinel evaluates recovery.",
+  "facts": [
+    {
+      "name": "transaction",
+      "value": "0x1dca47a8bf805825f48833476f2757ee530dac0896097cd533bb97b2962388cc"
+    },
+    {
+      "name": "target",
+      "value": "0x0FFCcd4b9Bd7e3E3Fe10cb1CC330A8ce36ad78E5"
+    }
+  ]
+}
