@@ -1,0 +1,40 @@
+{
+  "schema": "sentinel-advisory-v1",
+  "protocol_id": "sentinel-demo",
+  "protocol_address": "0xdFb4f6Fc4570B04A198b484aa6175025882c7c21",
+  "network": "Studio Next",
+  "chain_id": 61997,
+  "canonical_rpc": "https://studio-next.genlayer.com/api",
+  "incident_id": "incident-hardened-v1-r2-20260917",
+  "phase": "RECOVERY",
+  "failure_class": "unauthorized-drain",
+  "status": "REMEDIATED",
+  "transaction_hash": "0xfa81e65be38f4fd772f5b2319f4b9a63cd67bc7e669c10eb4b2599ae511eb94f",
+  "issued_at": "2026-09-17T20:20:00.000Z",
+  "current": false,
+  "critical_signal": false,
+  "mitigation_complete": true,
+  "summary": "Fresh recovery evidence establishes that the new ProtectedDemo target is remediated and eligible for a bounded recovery assessment after the policy cooldown.",
+  "facts": [
+    {
+      "name": "target",
+      "value": "0xdFb4f6Fc4570B04A198b484aa6175025882c7c21"
+    },
+    {
+      "name": "incident",
+      "value": "incident-hardened-v1-r2-20260917"
+    },
+    {
+      "name": "remediation_transaction",
+      "value": "0xfa81e65be38f4fd772f5b2319f4b9a63cd67bc7e669c10eb4b2599ae511eb94f"
+    },
+    {
+      "name": "target_state",
+      "value": "paused=true; remediated=true"
+    },
+    {
+      "name": "recovery_policy",
+      "value": "900-second cooldown observed before recovery assessment"
+    }
+  ]
+}
