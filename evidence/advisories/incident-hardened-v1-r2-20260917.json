@@ -1,0 +1,36 @@
+{
+  "schema": "sentinel-advisory-v1",
+  "protocol_id": "sentinel-demo",
+  "protocol_address": "0xdFb4f6Fc4570B04A198b484aa6175025882c7c21",
+  "network": "Studio Next",
+  "chain_id": 61997,
+  "canonical_rpc": "https://studio-next.genlayer.com/api",
+  "incident_id": "incident-hardened-v1-r2-20260917",
+  "phase": "EMERGENCY",
+  "failure_class": "unauthorized-drain",
+  "status": "ACTIVE",
+  "transaction_hash": "0x3acb12cf3e16bda98bc7ecb95aa0e64a3dfa13005bcdc3dd3ab94414a9d1948d",
+  "issued_at": "2026-09-17T20:10:00.000Z",
+  "current": true,
+  "critical_signal": true,
+  "mitigation_complete": false,
+  "summary": "Fresh authenticated evidence establishes an unauthorized outflow against the newly deployed ProtectedDemo target.",
+  "facts": [
+    {
+      "name": "target",
+      "value": "0xdFb4f6Fc4570B04A198b484aa6175025882c7c21"
+    },
+    {
+      "name": "incident",
+      "value": "incident-hardened-v1-r2-20260917"
+    },
+    {
+      "name": "outflow",
+      "value": "100"
+    },
+    {
+      "name": "authorization",
+      "value": "Not approved by the protocol owner"
+    }
+  ]
+}
